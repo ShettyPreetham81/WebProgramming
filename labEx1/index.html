@@ -1,97 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width,intial-scale=1">
-        <title>Page&Paper Bookshop</title>
-        <!--Bootstrap CSS:external framework Stylesheet.-->
-        <link href="https://cdn:jsdelivr.net/npm/bootsrap@5.3.3/dist/css/bootstrap.min.css" rel="Stylesheet">
-    <!-- Custom Css:external stylesheet;no inline css is used.-->
-    <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!-- Html5 semantic header with the bootstrap navbar components-->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light-bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="#home">Page& Paper</a>
-                    <button class="navbar-toogler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="mainNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#events">Services / Events</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
-                        </ul>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page & Paper Bookshop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a href="#home" class="navbar-brand">Page & Paper</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miniNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> <a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"> <a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"> <a href="#events" class="nav-link">Services/Events</a></li>
+                        <li class="nav-item"> <a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"> <a href="#contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"> <a href="#registration" class="nav-link">Registration</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <!--HTML 5 main elements contains the pages semantic content sections-->
-        <main>
-            <!--home section: html structure with bootstrap grid and button classess-->
-            <section class="hero py-5" id="home">
-                <div class="container">
-                    <div class="row align-items-center g-4">
-                        <div class="col-md-6">
-                            <p class="eyebrow">Welcome to Page & Paper</p>
-                            <h1>Find a story to<span>fall into.</span></h1>
-                            <p>Your friendly online bookshop for new discoveries and old favorites.</p>
-                            <a class="btn btn-success" href="#books">Browse books</a>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="img-fluid rounded" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=foramt&amp;fit=crop&amp;w=1000&amp;q=80" alt="books aranged on a library shelf">
-                        </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero py-5" id="home">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6">
+                        <p class="eyebrow">WELCOME TO PAGE & PAPER</p>
+                        <h1>Find a story  to<span>fall into</span></h1>
+                        <p>Your friendly online bookshop for new discoveries and old favorites.</p>
+                        <a href="#books" class="btn btn-success">Browse Books</a>
                     </div>
-                </div>
-            </section>
-            <!--About section:HTML5 section with bootstrap container utilities.-->
-            <section class="conntainer section-padding text-center" id="about">
-                <p class="eyebrow">About Our Bookshop</p>
-                <h2>Books make life <span>better.</span></h2>
-                <p class="sectioin-text mx-auto">We ae an indepenedent online bookshop run by readers.Our shelves arre filled with stories we love and recommmendations we cant wait to share.</p>
-            </section>
-            <!--Books sections:Bootstrap grid and Card components.-->
-            <section class="section-padding bg-soft" id="books">
-                <div class="container">
-                    <p class="eyebrow">Pick your Next Read</p>
-                    <h2>Popular books</h2>
-                    <div class="row g-4 mt-2">
-                        <article class="card h-100">
-                            <div class="book-cover cover green">The Quiet<br>Garden</div>
-                            <div class="card-body"><h3 class="card-title">The Quiet Garden</h3><p class="card-text">Fiction.$18.00</p></div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="card h-100">
-                            <div class="book-cover cover-orange">Small<br>Wonders</div>
-                            <div class="card-body"><h3 class="card-title">Small Wonders</h3><p class="card-text">Essays.$16.50</p></div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="card h-100">
-                            <div class="book-cover cover-blue">The Art of<br>Starting Again</div>
-                            <div class="card-body"><h3 class="card-title">The Art of Starting Again</h3><p class="card-text">Nonfiction.$21.00</p></div>
-                        </article>
+                    <div class="col-md-6">
+                        <img src="https://cdn.pixabay.com/photo/2016/01/19/01/42/library-1147815_1280.jpg" alt="Books arranged on a library shelf" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
-            </section>
-            <!--Services And Events section: HTML5 articles arranged with Bootstrap grid-->
-            <section class="container section-padding" id="events">
-                <p class="eyebrow">Come Read With Us</p>
-                <h2>Services & events</h2>
-                <div class="row g-3 mt-2">
-                    <article class="col-md-4"><div class="event-box"><h3>Online Book club</h3><p>Meet readers and talk about a new book each month.</p></h2></div></article>
-                    <article class="col-md-4"><div class="event-box"><h3>Book recommmendations</h3><p>Tell us what you enjoy and well help find your next read.</p></div></article>
+        </section>
+        <section class="container section-padding text-center" id="about">
+            <p class="eyebrow">ABOUT OUR BOOKS</p>
+            <h2>Books make life<span>better.</span></h2>
+            <p class="section-text mx-auto">We are independent online bookshop run by readers. Our shelves are filled with stories we love and recommendations we can't wait to share.</p>
+        </section>
+        <section class="section-padding bg-soft" id="books">
+            <div class="container">
+                <p class="eyebrow">PICK YOUR NEXT READ</p>
+                <h2>Popular Books</h2>
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <div class="book-cover cover-green">The Quiet<br>Garden</div>
+                        <div class="card-body"><h3 class="card-title">The Quiet Garden</h3><p class="card-text">Fiction•$18.00</p></div>
+                    </article>
                 </div>
-            </section>
-        </main>
-    </body>
-</html>
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <div class="book-cover cover-orange">Small<br>Wonders</div>
+                        <div class="card-body"><h3 class="card-title">Small Wonders</h3><p class="card-text">Essays•$16.50</p></div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100">
+                        <div class="book-cover cover-blue">The Art of<br>Starting Again</div>
+                        <div class="card-body"><h3 class="card-title">SThe Art of Starting Again</h3><p class="card-text">Nonfiction•$21.00</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
+        <section class="container section-padding" id="events">
+            <p class="eyebrow">COME READ WITH US</p>
+            <h2>Services & Events</h2>
+            <div class="row g-3 mt-2">
+                <article class="col-md-4"> <div class="event-box"><h3>Online Book Club</h3><p>Meet readers and talk about a new book each month.</p></div></article>
+                <article class="col-md-4"> <div class="event-box"><h3>Book Recommendations</h3><p>Tell us what you enjoy and we'll help find your next read.</p></div></article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
 
