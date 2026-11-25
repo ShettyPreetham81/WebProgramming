@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+}
+a{
+    padding: 2px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
